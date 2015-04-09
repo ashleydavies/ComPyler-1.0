@@ -1,7 +1,0 @@
-PUSH V print
-OP (
-PUSH S Yolo
-OP )
-CALL
-EOS
-~EOF
