@@ -1,5 +1,4 @@
 import "Math";
-import "Yolo";
 
 player = {
 	["money"] = 0,
