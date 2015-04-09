@@ -1,0 +1,313 @@
+PUSH V import
+PUSH S Math
+CALL
+EOS
+PUSH V import
+PUSH S Yolo
+CALL
+EOS
+PUSH V player
+PUSH A
+PUSH S money
+PUSH I 0
+OP =
+CNTRL ARRAY_PUSH
+PUSH S name
+PUSH V input
+OP (
+PUSH S Enter your name, challenger: 
+OP )
+CALL
+OP =
+CNTRL ARRAY_PUSH
+OP =
+EOS
+PUSH V print
+OP (
+PUSH S Welcome to Griffiths' Domain, 
+PUSH V player_name
+OP +
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH F 1.5
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S Dost thou think thou canst overthrow Joey? Thy leader of thy hidden valleys?
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH F 1.5
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S Then thou isth mistakenth. Only with the power of the salad green dragons, 
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH F 1.5
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S canst thou defeat Joey Griffiths, leader of this domain.
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S 
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH F 1.5
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S 
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH F 1.5
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S Thou can hasth one helper in thine grand quest. Who do you choose, fair sir(ess)?
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH I 3
+OP )
+CALL
+EOS
+PUSH V jamie
+PUSH S Jamie Nemeth
+OP =
+EOS
+PUSH V random_snake
+PUSH S Random Snake
+OP =
+EOS
+PUSH V luke_coles
+PUSH S Luke Coles as a Dragon
+OP =
+EOS
+PUSH V kerbals
+PUSH S Kerbals
+OP =
+EOS
+PUSH V richard
+PUSH S Richard with a frog
+OP =
+EOS
+PUSH V george
+PUSH S George
+OP =
+EOS
+PUSH V chris
+PUSH S Chris with a drill she had for christmas
+OP =
+EOS
+PUSH V print
+OP (
+PUSH S J : 
+PUSH V jamie
+OP +
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH F 0.5
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S R : 
+PUSH V random_snake
+OP +
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH F 0.5
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S L : 
+PUSH V luke_coles
+OP +
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH F 0.5
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S K : 
+PUSH V kerbals
+OP +
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH F 0.5
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S R : 
+PUSH V richard
+OP +
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH F 0.5
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S G : 
+PUSH V george
+OP +
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH F 0.5
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S C : 
+PUSH V chris
+OP +
+OP )
+CALL
+EOS
+PUSH V sleep
+OP (
+PUSH F 0.5
+OP )
+CALL
+EOS
+PUSH V print
+OP (
+PUSH S 
+OP )
+CALL
+EOS
+PUSH V helper
+PUSH V input
+OP (
+PUSH S Enter the letter, my friend: 
+OP )
+CALL
+OP =
+EOS
+PUSH V chosen_helper
+PUSH S 
+OP =
+EOS
+PUSH V helper
+PUSH S J
+OP ==
+CNTRL GOTOIFNOT Code?1_1
+PUSH V chosen_helper
+PUSH V jamie
+OP =
+CNTRL GOTO Code?1_END
+CNTRL LABEL Code?1_1
+PUSH V helper
+PUSH S R
+OP ==
+CNTRL GOTOIFNOT Code?1_2
+PUSH V chosen_helper
+PUSH V random_snake
+OP =
+CNTRL GOTO Code?1_END
+CNTRL LABEL Code?1_2
+PUSH V helper
+PUSH S L
+OP ==
+CNTRL GOTOIFNOT Code?1_3
+PUSH V chosen_helper
+PUSH V luke_coles
+OP =
+CNTRL GOTO Code?1_END
+CNTRL LABEL Code?1_3
+PUSH V helper
+PUSH S K
+OP ==
+CNTRL GOTOIFNOT Code?1_4
+PUSH V chosen_helper
+PUSH V kerbals
+OP =
+CNTRL GOTO Code?1_END
+CNTRL LABEL Code?1_4
+CNTRL LABEL Code?1_END
+PUSH V print
+OP (
+PUSH S So, thy hast chosen 
+PUSH V chosen_helper
+PUSH S . A good choice, certainly.
+OP +
+OP +
+OP )
+CALL
+EOS
+PUSH V chosen_helper
+PUSH V jamie
+OP ==
+CNTRL GOTOIFNOT Code?2_1
+PUSH V print
+OP (
+PUSH S Jamie manipulates the laws of Physics to kill the final boss, and you win the game. Congratulations.
+OP )
+CALL
+CNTRL GOTO Code?2_END
+CNTRL LABEL Code?2_1
+CNTRL LABEL Code?2_END
+PUSH V print
+OP (
+OP )
+CALL
+EOS
+~EOF

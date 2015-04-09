@@ -1,0 +1,68 @@
+import "Math";
+import "Yolo";
+
+player = {
+	["money"] = 0,
+	["name"] = input("Enter your name, challenger: "),
+};
+
+
+print("Welcome to Griffiths' Domain, " + player_name);
+sleep(1.5);
+print("Dost thou think thou canst overthrow Joey? Thy leader of thy hidden valleys?");
+sleep(1.5);
+print("Then thou isth mistakenth. Only with the power of the salad green dragons, ");
+sleep(1.5);
+print("canst thou defeat Joey Griffiths, leader of this domain.");
+print("");
+sleep(1.5);
+print("");
+sleep(1.5);
+print("Thou can hasth one helper in thine grand quest. Who do you choose, fair sir(ess)?");
+sleep(3);
+
+
+JAMIE = "Jamie Nemeth";
+RANDOM_SNAKE = "Random Snake";
+LUKE_COLES = "Luke Coles as a Dragon";
+KERBALS = "Kerbals";
+RICHARD = "Richard with a frog";
+GEORGE = "George";
+CHRIS = "Chris with a drill she had for christmas";
+
+print("J : " + JAMIE);
+sleep(0.5);
+print("R : " + RANDOM_SNAKE);
+sleep(0.5);
+print("L : " + LUKE_COLES);
+sleep(0.5);
+print("K : " + KERBALS);
+sleep(0.5);
+print("R : " + RICHARD);
+sleep(0.5);
+print("G : " + GEORGE);
+sleep(0.5);
+print("C : " + CHRIS);
+sleep(0.5);
+print("");
+helper = input("Enter the letter, my friend: ");
+
+
+CHOSEN_HELPER = "";
+if helper == "J":
+	CHOSEN_HELPER = JAMIE;
+elseif helper == "R":
+	CHOSEN_HELPER = RANDOM_SNAKE;
+elseif helper == "L":
+	CHOSEN_HELPER = LUKE_COLES;
+elseif helper == "K":
+	CHOSEN_HELPER = KERBALS;
+end
+
+print("So, thy hast chosen " + CHOSEN_HELPER + ". A good choice, certainly.");
+
+if CHOSEN_HELPER == JAMIE:
+	print("Jamie manipulates the laws of Physics to kill the final boss, and you win the game. Congratulations.");
+end
+
+print();
